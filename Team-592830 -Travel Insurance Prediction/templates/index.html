@@ -1,0 +1,71 @@
+<style>
+body {
+  background-image: url('../static/images/air.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<html>
+<form action="/predict" method="POST">
+
+<br>
+<br>
+<label >Travel Insurance Prediction</label>
+<br>
+<br>
+<br>
+Age
+<br>
+<input type="text" name="Age"></input>
+<br>
+<br>
+<label >Employment Type</label>
+<br>
+<select name="EmploymentType">
+  <option value="Private Sector/Self Employed">Private Sector/Self Employed</option>
+  <option value="Government Sector">Government Sector</option>
+</select>
+<br>
+<br>
+Annual Income
+<br>
+<input type="text" name="AnnualIncome"></input>
+<br>
+<br>
+Family Members
+<br>
+<input type="text" name="FamilyMembers"></input>
+<br>
+<br>
+<label >Chronic Diseases</label>
+<br>
+<select name="ChronicDiseases">
+  <option value="Yes">YES</option>
+  <option value="No">NO</option>
+</select>
+<br>
+<br>
+<label >Frequent Flyer</label>
+<br>
+<select name="FrequentFlyer">
+  <option value="Yes">YES</option>
+  <option value="No">NO</option>
+</select>
+<br>
+<br>
+<label >Ever Travelled Abroad</label>
+<br>
+<select name="EverTravelledAbroad">
+  <option value="Yes">YES</option>
+  <option value="No">NO</option>
+</select>
+<br>
+<br>
+<input type="submit"></input>
+
+</form>
+
+{{result}}
+</html>
